@@ -1,0 +1,8 @@
+.main_container {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_outer {
+    background-color: #ffdee9;
+}
