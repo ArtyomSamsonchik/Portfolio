@@ -1,0 +1,38 @@
+.contacts_outer {
+    background-color: #ffe2e2;
+}
+
+.contacts_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    height: 100px;
+}
+
+.header h2 {
+    background-color: #d6d6d1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    border: 1px solid;
+}
+
+.form .field {
+    padding: 10px;
+    background-color: #cdcdcd;
+}
+.form input,
+.form textarea {
+    border: none;
+}
+
+.form textarea {
+    resize: none;
+}

@@ -5,6 +5,7 @@ import Main from "./components/Main/Main";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import RemoteWork from "./components/Remote work/RemoteWork";
+import Contacts from "./components/Contacts/Contacts";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Skills/>
             <Projects/>
             <RemoteWork/>
+            <Contacts/>
         </div>
     )
 }
