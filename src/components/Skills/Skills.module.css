@@ -7,11 +7,7 @@
     align-items: center;
 }
 
-.header {
-    height: 100px;
-}
-
-.header h2 {
+h2 {
     background-color: #d6d6d1;
 }
 

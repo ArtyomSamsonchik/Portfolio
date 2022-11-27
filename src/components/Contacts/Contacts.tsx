@@ -6,7 +6,7 @@ const Contacts = () => {
     return (
         <div className={`${commonS.outer_box} ${s.contacts_outer}`}>
             <section className={`${commonS.container} ${s.contacts_container}`}>
-                <header className={s.header}>
+                <header className={commonS.header}>
                     <h2>My contacts</h2>
                 </header>
                 <form className={s.form} id="form">

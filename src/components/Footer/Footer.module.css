@@ -1,0 +1,21 @@
+.footer_outer {
+    background-color: #ebffe4;
+    height: 50vh;
+}
+
+.footer_container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accounts {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    border: 1px solid;
+}
+
+.copyright {
+    background-color: #d6d6d1;
+}

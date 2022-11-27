@@ -9,7 +9,7 @@ const Projects = () => {
     return (
         <div className={`${commonS.outer_box} ${s.projects_outer}`}>
             <section className={`${commonS.container} ${s.projects_container}`}>
-                <header className={s.header}>
+                <header className={commonS.header}>
                     <h2>My Projects</h2>
                 </header>
                 <ul className={s.projects_list}>
