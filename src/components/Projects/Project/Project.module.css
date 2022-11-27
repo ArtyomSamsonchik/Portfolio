@@ -17,14 +17,11 @@
     padding-bottom: 60%;
 }
 
-.image_container a {
-    display: block;
-    padding: 10px 20px;
+.link {
     position: absolute;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    border: 1px solid;
 }
 
 .info {

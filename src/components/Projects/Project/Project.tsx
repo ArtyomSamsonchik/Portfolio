@@ -1,4 +1,5 @@
 import React, {FC} from 'react';
+import commonS from "../../../common/styles/Common.module.css"
 import s from "./Project.module.css"
 
 type ProjectProps = {
@@ -14,7 +15,7 @@ const Project: FC<ProjectProps> = (props) => {
         <li className={s.project}>
             <div className={s.image_container}>
                 <img src={imageUrl} alt="project"/>
-                <a href="#">View details</a>
+                <a className={`${commonS.link} ${s.link}`} href="#">View details</a>
             </div>
             <div className={s.info}>
                 <h3>{name}</h3>

@@ -1,0 +1,14 @@
+.remote_outer {
+    height: 30vh;
+    background-color: #fffeec;
+}
+
+.remote_container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remote_container h2 {
+    background-color: #d6d6d1;
+}
