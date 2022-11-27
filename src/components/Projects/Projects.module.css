@@ -1,24 +1,26 @@
-.skills_outer {
-    background-color: #ddfee9;
+.projects_outer {
+    background-color: #f1e2ff;
 }
 
-.skills_container {
+.projects_container {
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
 }
 
 .header {
     height: 100px;
+    flex-shrink: 0;
 }
 
 .header h2 {
     background-color: #d6d6d1;
 }
 
-.skills_list {
+.projects_list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     gap: 20px;
     width: 100%;
 }

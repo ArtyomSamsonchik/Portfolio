@@ -10,6 +10,7 @@ type SkillProps = {
 const Skill: FC<SkillProps> = (props) => {
     const {skillName, imageUrl, description} = props
 
+    //TODO: header tag or div?
     return (
         <li className={s.skill}>
             <header className={s.header}>
