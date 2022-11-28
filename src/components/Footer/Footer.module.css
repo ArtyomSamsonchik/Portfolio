@@ -1,12 +1,12 @@
 .footer_outer {
     background-color: #ebffe4;
-    height: 50vh;
 }
 
 .footer_container {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    min-height: 50vh;
 }
 
 .accounts {

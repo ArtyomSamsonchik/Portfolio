@@ -6,9 +6,11 @@ import s from "./Greeting.module.css"
 const Greeting = () => {
     return (
         <div className={s.greeting}>
-            <h1>Hello</h1>
-             <p>I'm Artyom Samsonchik</p>
-            <p>Frontend developer</p>
+            <h1>
+                Hello<br/>
+                I'm Artyom Samsonchik<br/>
+                Frontend developer
+            </h1>
         </div>
     )
 }

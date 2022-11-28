@@ -1,5 +1,10 @@
+.nav {
+    width: 350px;
+}
+
 .nav ul{
     display: flex;
+    justify-content: space-between;
     gap: 10px;
     border: 1px solid;
     padding: 5px;
