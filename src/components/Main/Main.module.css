@@ -12,6 +12,6 @@
     .main_container {
         flex-direction: column;
         justify-content: flex-start;
-        gap: 40px   ;
+        gap: 40px;
     }
 }

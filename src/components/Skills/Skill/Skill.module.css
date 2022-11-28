@@ -3,6 +3,14 @@
     border: 1px solid;
 }
 
+@media (max-width: 1140px) {
+    .skill {
+        flex-grow: 1;
+        max-width: 425px;
+        width: 350px;
+    }
+}
+
 .header {
     display: flex;
     flex-direction: column;

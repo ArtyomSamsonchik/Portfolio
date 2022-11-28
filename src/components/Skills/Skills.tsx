@@ -13,9 +13,9 @@ const Skills = () => {
                     <h2>My skills</h2>
                 </header>
                 <ul className={s.skills_list}>
-                    <Skill skillName="skill" imageUrl="" description={description}/>
-                    <Skill skillName="skill" imageUrl="" description={description}/>
-                    <Skill skillName="skill" imageUrl="" description={description}/>
+                    <Skill skillName="skill1" imageUrl="" description={description}/>
+                    <Skill skillName="skill2" imageUrl="" description={description}/>
+                    <Skill skillName="skill3" imageUrl="" description={description}/>
                 </ul>
             </section>
         </div>
