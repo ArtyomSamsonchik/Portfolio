@@ -6,9 +6,7 @@ const RemoteWork = () => {
     return (
         <div className={`${commonS.outer_box} ${s.remote_outer}`}>
             <section className={`${commonS.container} ${s.remote_container}`}>
-                <header className={commonS.header}>
-                    <h2>Considering remote work</h2>
-                </header>
+                <h2>Considering remote work</h2>
                 <a className={commonS.link} href="#">Hire me</a>
             </section>
         </div>

@@ -16,11 +16,7 @@
     border: 1px solid;
 }
 
-.header {
-    flex-shrink: 0;
-    height: 100px;
-}
-
-.header h2 {
+h2 {
+    margin-bottom: 60px;
     background-color: #d6d6d1;
 }

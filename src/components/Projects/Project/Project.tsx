@@ -14,7 +14,7 @@ const Project: FC<ProjectProps> = (props) => {
     return (
         <li className={s.project}>
             <div className={s.image_container}>
-                <img src={imageUrl} alt="project"/>
+                <img src={imageUrl} alt='Решил оставить img, т.к. это скорее "контентное" иозобр., а не фон'/>
                 <a className={`${commonS.link} ${s.link}`} href="#">View details</a>
             </div>
             <div className={s.info}>

@@ -6,9 +6,7 @@ const Contacts = () => {
     return (
         <div className={`${commonS.outer_box} ${s.contacts_outer}`}>
             <section className={`${commonS.container} ${s.contacts_container}`}>
-                <header className={`${commonS.header} ${s.header}`}>
-                    <h2>My contacts</h2>
-                </header>
+                <h2>My contacts</h2>
                 <form id="form" className={s.form}>
                     <input className={s.field}/>
                     <input className={s.field}/>

@@ -14,13 +14,16 @@
 .image_container {
     position: relative;
     width: 100%;
+    padding-bottom: 60%;
     background-color: #c4c4c4;
 }
 
 .image_container img {
     display: block;
+    position: absolute;
     width: 100%;
-    padding-bottom: 60%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .link {
@@ -28,6 +31,14 @@
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+    background-color: #ffffff7f;
+    text-decoration: none;
+    backdrop-filter: blur(4px);
+    transition: scale 0.2s ease-in-out;
+}
+
+.link:hover {
+    scale: 1.1;
 }
 
 .info {

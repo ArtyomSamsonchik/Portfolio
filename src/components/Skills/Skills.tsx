@@ -9,9 +9,7 @@ const Skills = () => {
     return (
         <div className={`${commonS.outer_box} ${s.skills_outer}`}>
             <section className={`${commonS.container} ${s.skills_container}`}>
-                <header className={commonS.header}>
-                    <h2>My skills</h2>
-                </header>
+                <h2>My skills</h2>
                 <ul className={s.skills_list}>
                     <Skill skillName="skill1" imageUrl="" description={description}/>
                     <Skill skillName="skill2" imageUrl="" description={description}/>

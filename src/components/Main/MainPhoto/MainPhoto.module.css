@@ -4,8 +4,17 @@
     border: 1px solid;
 }
 
+.photo_container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 135%;
+}
+
 .main_photo img {
     display: block;
+    position: absolute;
     width: 100%;
-    padding-bottom: 125%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 25%;
 }

@@ -8,6 +8,7 @@
         flex-grow: 1;
         max-width: 425px;
         width: 350px;
+        padding: 10px;
     }
 }
 
