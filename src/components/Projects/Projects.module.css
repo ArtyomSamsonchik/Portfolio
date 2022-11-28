@@ -2,16 +2,9 @@
     background-color: #f1e2ff;
 }
 
-.projects_container {
-}
-
-h2 {
-    background-color: #d6d6d1;
-}
-
 .projects_list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;

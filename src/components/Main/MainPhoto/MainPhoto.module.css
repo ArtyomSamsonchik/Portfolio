@@ -1,5 +1,4 @@
 .main_photo {
-    flex-shrink: 0;
     width: 100%;
     max-width: 375px;
     border: 1px solid;

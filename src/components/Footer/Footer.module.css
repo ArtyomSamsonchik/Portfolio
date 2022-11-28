@@ -4,15 +4,23 @@
 
 .footer_container {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    gap: 20px;
+    min-height: auto;
+}
+
+.footer_container h3 {
+    height: auto;
+    background-color: #d6d6d1;
 }
 
 .accounts {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
     border: 1px solid;
 }
 

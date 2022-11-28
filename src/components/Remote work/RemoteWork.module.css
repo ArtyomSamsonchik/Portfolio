@@ -6,6 +6,6 @@
     min-height: 35vh;
 }
 
-h2 {
-    background-color: #d6d6d1;
+.remote_container h2 {
+    text-align: center;
 }

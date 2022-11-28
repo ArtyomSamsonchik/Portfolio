@@ -7,13 +7,14 @@ const Footer = () => {
     return (
         <div className={`${commonS.outer_box} ${s.footer_outer}`}>
             <footer className={`${commonS.container} ${s.footer_container}`}>
-                <h2 className={commonS.header}>
+                <h3 className={commonS.header}>
                     Artyom Samsonchik
-                </h2>
+                </h3>
                 <div className={s.accounts}>
-                    <Account link="" name="VK"/>
-                    <Account link="" name="Telegram"/>
-                    <Account link="" name="Instagram"/>
+                    <Account link="#" name="VK"/>
+                    <Account link="#" name="Telegram"/>
+                    <Account link="#" name="Instagram"/>
+                    <Account link="#" name="Linkedin"/>
                 </div>
                 <div className={s.copyright}>© 2022 All rights reserved.</div>
             </footer>

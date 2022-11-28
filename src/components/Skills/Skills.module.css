@@ -2,13 +2,6 @@
     background-color: #ddfee9;
 }
 
-.skills_container {
-}
-
-h2 {
-    background-color: #d6d6d1;
-}
-
 .skills_list {
     display: flex;
     flex-wrap: wrap;

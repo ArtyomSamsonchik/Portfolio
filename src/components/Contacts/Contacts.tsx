@@ -6,16 +6,13 @@ const Contacts = () => {
     return (
         <div className={`${commonS.outer_box} ${s.contacts_outer}`}>
             <section className={`${commonS.container} ${s.contacts_container}`}>
-                <header className={commonS.header}>
+                <header className={`${commonS.header} ${s.header}`}>
                     <h2>My contacts</h2>
                 </header>
-                <form className={s.form} id="form">
+                <form id="form" className={s.form}>
                     <input className={s.field}/>
                     <input className={s.field}/>
-                    <textarea className={s.field} name=""
-                              id="" cols={30} rows={10}
-                              spellCheck="false"
-                    />
+                    <textarea className={s.field} cols={30} rows={10} spellCheck="false"/>
                 </form>
                 <button type="submit" className={commonS.link} form="form">Send</button>
             </section>

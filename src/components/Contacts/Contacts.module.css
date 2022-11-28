@@ -3,17 +3,19 @@
 }
 
 .contacts_container {
+    gap: 40px;
 }
 
-h2 {
-    background-color: #d6d6d1;
+.header {
+    height: auto;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 400px;
+    width: 100%;
+    max-width: 500px;
     border: 1px solid;
 }
 
@@ -21,6 +23,7 @@ h2 {
     padding: 10px;
     background-color: #cdcdcd;
 }
+
 .form input,
 .form textarea {
     border: none;

@@ -1,18 +1,24 @@
 .project {
-    flex:1 1 0;
-    min-width: 500px;
-    max-width: 600px;
+    flex-grow: 1;
+    width: 400px;
+    max-width: 550px;
     border: 1px solid;
+}
+
+@media (max-width: 865px) {
+    .project {
+        width: 410px;
+    }
 }
 
 .image_container {
     position: relative;
     width: 100%;
-    height: 350px;
     background-color: #c4c4c4;
 }
 
 .image_container img {
+    display: block;
     width: 100%;
     padding-bottom: 60%;
 }
@@ -27,6 +33,13 @@
 .info {
     padding: 15px 30px;
     background-color: #eaedec;
+}
+
+@media (max-width: 865px) {
+    .info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .info > * {
