@@ -11,14 +11,14 @@
     }
 }
 
-.image_container {
+.user_image {
     position: relative;
     width: 100%;
     padding-bottom: 60%;
     background-color: #c4c4c4;
 }
 
-.image_container img {
+.user_image img {
     display: block;
     position: absolute;
     width: 100%;

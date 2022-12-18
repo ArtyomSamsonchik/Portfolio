@@ -1,0 +1,11 @@
+@use "./common/styles/sass/mixins" as mixins;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include mixins.font;
+}

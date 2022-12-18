@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "variables" as vars;
+
+@mixin font($size: 18px, $weight: 400) {
+    font-family: "Poppins", sans-serif;
+    font-size: $size;
+    line-height: 1.5;
+    letter-spacing: 0;
+    word-wrap: break-word;
+    font-weight: $weight;
+    color: map.get(vars.$text-colors, "primary");
+}
+
+@mixin container($flex-direction: column) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: center;
+    align-items: center;
+}

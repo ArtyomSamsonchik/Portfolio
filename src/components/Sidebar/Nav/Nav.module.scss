@@ -1,0 +1,49 @@
+@use "sass:map";
+@use "../../../common/styles/sass/variables" as vars;
+@use "../../../common/styles/sass/mixins" as mixins;
+
+$padding: 14px;
+$underline-color: rgba(255, 255, 255, .1);
+$active-underline-color: rgba(255, 255, 255, .15);
+
+@mixin underline {
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        background-color: $underline-color;
+        transition: all .3s ease;
+    }
+    &::after {
+        background-color: $active-underline-color;
+    }
+    &:not(:hover)::after {
+        width: 0
+    }
+}
+
+.nav {
+    padding: vars.$padding;
+    background-color: map.get(vars.$bg-colors, "secondary");
+    color: map.get(vars.$text-colors, "white");
+
+    li {
+        position: relative;
+        padding: $padding 0;
+        font-weight: 700;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        transition: all .3s ease;
+
+        &:hover {
+            color: map.get(vars.$text-colors, "hover");
+        }
+
+        @include underline
+    }
+}

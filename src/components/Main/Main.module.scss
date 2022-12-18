@@ -1,0 +1,38 @@
+@use "sass:map";
+@use "../../common/styles/sass/mixins" as mixins;
+@use "../../common/styles/sass/variables" as vars;
+
+.bg_layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: -1;
+    background-color: map.get(vars.$bg-colors, "primary");
+}
+
+.container {
+    position: relative;
+    @include mixins.container(row);
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1450px;
+    min-height: 100vh;
+    margin: 70px auto;
+    border: 1px solid;
+}
+
+//.main_container {
+//    flex-direction: row;
+//    flex-wrap: wrap;
+//    justify-content: space-around;
+//}
+//
+//@media (max-width: 768px) {
+//    .main_container {
+//        flex-direction: column;
+//        justify-content: flex-start;
+//        gap: 40px;
+//    }
+//}

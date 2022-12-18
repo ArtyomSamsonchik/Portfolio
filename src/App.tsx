@@ -11,13 +11,13 @@ import Footer from "./components/Footer/Footer";
 function App() {
     return (
         <div className="App">
-            <Header/>
+            {/*<Header/>*/}
             <Main/>
-            <Skills/>
-            <Projects/>
-            <RemoteWork/>
-            <Contacts/>
-            <Footer/>
+            {/*<Skills/>*/}
+            {/*<Projects/>*/}
+            {/*<RemoteWork/>*/}
+            {/*<Contacts/>*/}
+            {/*<Footer/>*/}
         </div>
     )
 }
