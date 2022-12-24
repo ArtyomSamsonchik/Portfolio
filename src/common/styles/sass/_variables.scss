@@ -1,10 +1,31 @@
-$bg-primary-color: #3a3934;
-$bg-secondary-color: #494b50;
-$border-radius: 15px !default;
-$padding: 48px !default;
-$photo-size: 220px;
-$photo-border-color: #494b50;
+$border-radius: 15px;
 
-$bg-colors: ("primary": #3a3934, "secondary": #494b50);
+$margin-large: 70px;
+$margin-medium: 50px;
+
+$padding-large: 45px;
+$padding-medium: 35px;
+
+$gap-large: $padding-large * 0.6;
+$gap-medium: $padding-medium * 0.6;
+
+//max-width breakpoints
+$breakpoints: (
+        "medium": 1400px,
+        "small": 1040px
+);
+
+$bg-colors: (
+        "primary": #3a3934,
+        "secondary": #494b50,
+        "hover-link": #ffb324
+);
+
 $navbar-colors: ("primary": #feb224);
-$text-colors: ("white": #fff, "primary": #888888, "hover": #ff451b)
+
+$text-colors: (
+        "white": #fff,
+        "primary": #888888,
+        "accent": #ff451b,
+        "light-grey": #bab6b6,
+);

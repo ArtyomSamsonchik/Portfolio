@@ -1,19 +1,39 @@
 @use "sass:map";
-@use "variables" as vars;
+@use "sass:list";
+@use "sass:math";
+@use "variables" as *;
+@use "functions" as *;
 
-@mixin font($size: 18px, $weight: 400) {
+@mixin base-font {
     font-family: "Poppins", sans-serif;
-    font-size: $size;
+    @include typography;
     line-height: 1.5;
     letter-spacing: 0;
     word-wrap: break-word;
-    font-weight: $weight;
-    color: map.get(vars.$text-colors, "primary");
+    color: map.get($text-colors, "primary");
 }
 
-@mixin container($flex-direction: column) {
+@mixin typography(
+    $size: 18px,
+    $weight: 400,
+    $color: map.get($text-colors, "primary")
+) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin flex(
+    $flex-direction: column,
+    $justify-content: center,
+    $align-items: center
+) {
     display: flex;
     flex-direction: $flex-direction;
-    justify-content: center;
-    align-items: center;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin transition {
+    transition: all .3s ease;
 }

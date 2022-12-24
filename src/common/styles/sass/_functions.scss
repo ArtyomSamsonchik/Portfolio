@@ -1,0 +1,8 @@
+@use "variables" as vars;
+@use "sass:list";
+@use "sass:map";
+
+//TODO: configure container min height later. It could be more or less than 524px.
+@function get-content-min-height($margin, $min-height: 524px) {
+    @return max($min-height, calc(100vh - $margin * 2));
+}

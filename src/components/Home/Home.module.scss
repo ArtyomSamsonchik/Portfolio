@@ -1,0 +1,86 @@
+@use "sass:map";
+@use "sass:math";
+@use "../../common/styles/sass/mixins" as *;
+@use "../../common/styles/sass/variables" as *;
+@use "../../common/styles/sass/functions" as *;
+
+$container-margin-large: $margin-large;
+$container-margin-medium: $margin-medium;
+
+//TODO: configure container min height later. It could be more or less than 524px.
+@function get-content-min-height($margin, $min-height: 524px) {
+    @return max($min-height, calc(100vh - $margin * 2));
+}
+
+.greeting {
+    position: relative;
+    margin-bottom: $container-margin-large;
+    min-height: get-content-min-height($container-margin-large);
+    @include flex;
+    border-radius: $border-radius;
+    background-color: rgba(26, 48, 86, 0.82);
+    overflow: hidden;
+
+    .bg_layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: url("../../resourses/img/christopher-gower-m_HRfLhgABo-unsplash.jpg") center/cover no-repeat;
+    }
+
+    > * {
+        text-align: center;
+    }
+
+    .hello {
+        @include typography(26px, 700, map.get($text-colors, "accent"));
+    }
+
+    .name {
+        @include typography(68px, 700, map.get($text-colors, "white"));
+        margin-bottom: 20px;
+    }
+
+    .text {
+        @include typography(22px, $color: map.get($text-colors, "light-grey"));
+        margin-bottom: 40px;
+    }
+
+    .link {
+        padding: 14px 50px;
+        background-color: map.get($text-colors, "accent");
+        border-radius: 10px;
+        @include typography(16px, 600, map.get($text-colors, "white"));
+        text-transform: uppercase;
+        white-space: nowrap;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 37%);
+        @include transition;
+
+        &:hover {
+            background-color: map.get($bg-colors, "hover-link");
+        }
+    }
+
+    @media (max-width: map.get($breakpoints, "medium")) {
+        min-height: get-content-min-height($container-margin-medium);
+
+        .hello {
+            font-size: 23px;
+        }
+        .name {
+            font-size: 58px;
+            margin-bottom: 10px;
+        }
+        .text {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        .link {
+            font-size: 14px;
+            padding: 8px 35px;
+        }
+    }
+}

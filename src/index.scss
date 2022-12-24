@@ -1,11 +1,12 @@
-@use "./common/styles/sass/mixins" as mixins;
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+@use "sass:map";
+@use "./common/styles/sass/variables" as *;
+@use "./common/styles/sass/mixins" as *;
+@use "common/styles/reset";
 
 body {
-  @include mixins.font;
+    @include base-font;
+    @media (max-width: map.get($breakpoints, "medium")) {
+        font-size: 16px;
+        line-height: 1.6;
+    }
 }

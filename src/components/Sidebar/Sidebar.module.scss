@@ -1,29 +1,61 @@
 @use "sass:map";
-@use "../../common/styles/sass/variables" as vars;
-@use "../../common/styles/sass/mixins" as mixins;
+@use "../../common/styles/sass/variables" as *;
+@use "../../common/styles/sass/functions" as *;
+@use "../../common/styles/sass/mixins" as *;
+
+$aside-padding-large: $padding-large;
+$aside-padding-medium: $padding-medium;
+$container-margin-large: $margin-large;
+$container-margin-medium: $margin-medium;
+$photo-border-color: #494b50;
+$photo-size-large: 222px;
+$photo-size-medium: 170px;
+$photo-shadow-color: rgb(255 255 255 / 8%);
 
 .aside {
-    border-radius: vars.$border-radius;
+    position: fixed;
+    height: calc(100vh - $container-margin-large * 2);
+    border-radius: $border-radius;
+    background-color: map.get($bg-colors, "secondary");
     overflow: hidden;
+    z-index: 100;
 
     .user_image {
-        padding: 0 vars.$padding;
-        background-color: map.get(vars.$navbar-colors, "primary");
+        padding: 0 $aside-padding-large;
+        background-color: map.get($navbar-colors, "primary");
+    }
+
+    .image_container {
+        position: relative;
+        top: $aside-padding-large;
+        width: $photo-size-large;
+        height: $photo-size-large;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 25%;
+            border: 5px solid $photo-border-color;
+            border-radius: $border-radius;
+            box-shadow: 18px 18px 30px $photo-shadow-color;
+        }
+    }
+
+    @media (max-width: map.get($breakpoints, "medium")) {
+        height: calc(100vh - $container-margin-medium * 2);
+
+        .user_image {
+            padding: {
+                left: $aside-padding-medium;
+                right: $aside-padding-medium;
+            }
+        }
+        .image_container {
+            top: $aside-padding-medium;
+            width: $photo-size-medium;
+            height: $photo-size-medium;
+        }
     }
 }
 
-.image_container {
-    position: relative;
-    width: vars.$photo-size;
-    height: vars.$photo-size;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 25%;
-        border: 5px solid #{vars.$photo-border-color};
-        border-radius: vars.$border-radius;
-        box-shadow: 18px 18px 30px rgb(255 255 255 / 8%);
-    }
-}
