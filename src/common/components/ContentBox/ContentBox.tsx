@@ -8,12 +8,12 @@ type ContentBoxProps = {
 
 const ContentBox: FC<ContentBoxProps> = (props) => {
     const {children, className} = props
-    const finalClassName = `${s.content_box} ${className || ""}`
+    const finalClassName = `${s.box} ${className || ""}`
 
     return (
-        <div className={finalClassName}>
+        <section className={finalClassName}>
             {children}
-        </div>
+        </section>
     )
 }
 

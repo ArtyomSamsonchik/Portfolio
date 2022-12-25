@@ -6,6 +6,7 @@ $container-margin-large: $margin-large;
 $container-margin-medium: $margin-medium;
 
 .greeting {
+    background-color: rgba(26, 48, 86, 0.82);
     color: map.get($text-colors, "white");
     text-align: center;
 

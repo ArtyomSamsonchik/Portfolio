@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "../../styles/sass/variables" as *;
+@use "../../styles/sass/mixins" as *;
+
+$card-padding-x-large: $padding-medium;
+$card-padding-y-large: $padding-medium * 1.25;
+$card-border-radius: $border-radius;
+
+.card {
+    @include flex($justify-content: flex-start);
+    flex: 1 0 30%;
+    padding: $card-padding-y-large $card-padding-x-large;
+    min-width: 260px;
+    background-color: map.get($bg-colors, "card");
+    border-radius: $card-border-radius;
+}

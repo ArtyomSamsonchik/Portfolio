@@ -1,6 +1,6 @@
 import React from 'react';
+import ContentBox from "../../common/components/ContentBox/ContentBox";
 import s from "./Home.module.scss";
-import ContentBox from "../ContentBox/ContentBox";
 
 const Home = () => {
     return (

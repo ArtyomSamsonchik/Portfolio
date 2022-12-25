@@ -1,0 +1,55 @@
+@use "sass:map";
+@use "../../common/styles/sass/variables" as *;
+@use "../../common/styles/sass/mixins" as *;
+
+$skills-gap-large: $gap-large;
+$icon-container-size-large: 110px;
+$icon-size-large: $icon-container-size-large * 0.65;
+$title-margin-bottom-large: $margin-large * 0.8;
+
+.skills_container {
+    @include flex($align-items: flex-start);
+
+    .title_short {
+        @include typography(26px, 700, map.get($text-colors, "accent"));
+        margin-bottom: 6px;
+    }
+
+    .title_full {
+        @include typography(45px, 600, map.get($text-colors, "white"));
+        margin-bottom: $title-margin-bottom-large;
+    }
+
+    .skills_list {
+        @include flex($flex-direction: row, $align-items: stretch);
+        flex-wrap: wrap;
+        gap: $skills-gap-large;
+    }
+
+    .skill_item {
+        gap: 10px;
+        text-align: center;
+    }
+
+    .icon_container {
+        @include flex($flex-direction: null);
+        width: $icon-container-size-large;
+        height: $icon-container-size-large;
+        border-radius: 50%;
+        background-color: map.get($bg-colors, "secondary");
+        border: 5px solid map.get($bg-colors, "hover-link");
+    }
+
+    .icon {
+        width: $icon-size-large;
+        height: $icon-size-large;
+    }
+
+    .header {
+        @include typography(24px, 700, map.get($text-colors, "white"));
+    }
+
+    .text {
+        color: map.get($text-colors, "card-grey");
+    }
+}
