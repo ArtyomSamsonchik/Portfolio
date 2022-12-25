@@ -1,18 +1,23 @@
 @use "sass:map";
+@use "sass:math";
 @use "../../common/styles/sass/variables" as *;
 @use "../../common/styles/sass/mixins" as *;
 
 $skills-gap-large: $gap-large;
+$skills-gap-medium: $gap-medium;
 $icon-container-size-large: 110px;
-$icon-size-large: $icon-container-size-large * 0.65;
+$icon-container-size-medium: 100px;
+$icon-size-large: math.ceil($icon-container-size-large * 0.65);
+$icon-size-medium: math.ceil($icon-container-size-medium * 0.65);
 $title-margin-bottom-large: $margin-large * 0.8;
+$title-margin-bottom-medium: 48px;
 
 .skills_container {
     @include flex($align-items: flex-start);
 
     .title_short {
-        @include typography(26px, 700, map.get($text-colors, "accent"));
         margin-bottom: 6px;
+        @include typography(28px, 600, map.get($text-colors, "accent"));
     }
 
     .title_full {
@@ -51,5 +56,30 @@ $title-margin-bottom-large: $margin-large * 0.8;
 
     .text {
         color: map.get($text-colors, "card-grey");
+    }
+
+    @media (max-width: map.get($breakpoints, "medium")) {
+        .title_short {
+            font-size: 24px;
+        }
+
+        .title_full {
+            margin-bottom: $title-margin-bottom-medium;
+            font-size: 35px;
+        }
+
+        .skills_list {
+            gap: $skills-gap-medium;
+        }
+
+        .icon_container {
+            width: $icon-container-size-medium;
+            height: $icon-container-size-medium;
+        }
+
+        .icon {
+            width: $icon-size-medium;
+            height: $icon-size-medium;
+        }
     }
 }

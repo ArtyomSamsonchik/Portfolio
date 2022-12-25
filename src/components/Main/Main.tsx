@@ -13,7 +13,6 @@ const Main = () => {
                 <Sidebar/>
                 <div className={s.content_wrapper}>
                     <Home/>
-                    {/*<Home/>*/}
                     <Skills/>
                 </div>
             </div>

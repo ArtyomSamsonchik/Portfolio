@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $border-radius: 15px;
 
 $margin-large: 70px;
@@ -7,7 +9,7 @@ $padding-large: 45px;
 $padding-medium: 35px;
 
 $gap-large: $padding-large * 0.6;
-$gap-medium: $padding-medium * 0.6;
+$gap-medium: math.ceil($padding-medium * 0.62);
 
 //max-width breakpoints
 $breakpoints: (

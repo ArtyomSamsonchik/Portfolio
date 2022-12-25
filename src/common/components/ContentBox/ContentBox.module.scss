@@ -1,9 +1,12 @@
 @use "sass:map";
+@use "sass:math";
 @use "../../styles/sass/mixins" as *;
 @use "../../styles/sass/variables" as *;
 
-$container-margin-large: $margin-large;
-$container-margin-medium: $margin-medium;
+$box-margin-large: $margin-large;
+$box-margin-medium: $margin-medium;
+$box-padding-large: $margin-large;
+$box-padding-medium: 55px;
 
 //TODO: configure container min height later. It could be more or less than 524px.
 @function get-content-min-height($margin, $min-height: 524px) {
@@ -12,16 +15,16 @@ $container-margin-medium: $margin-medium;
 
 .box {
     position: relative;
-    padding: 70px;
-    margin-bottom: $container-margin-large;
-    min-height: get-content-min-height($container-margin-large);
+    padding: $box-padding-large;
+    margin-bottom: $box-margin-large;
+    min-height: get-content-min-height($box-margin-large);
     @include flex;
     border-radius: $border-radius;
     background-color: map.get($bg-colors, "secondary");
     overflow: hidden;
 
     @media (max-width: map.get($breakpoints, "medium")) {
-        padding: 55px;
-        min-height: get-content-min-height($container-margin-medium);
+        padding: $box-padding-medium;
+        min-height: get-content-min-height($box-margin-medium);
     }
 }

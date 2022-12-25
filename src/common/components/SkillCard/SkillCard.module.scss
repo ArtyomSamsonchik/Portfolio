@@ -3,7 +3,9 @@
 @use "../../styles/sass/mixins" as *;
 
 $card-padding-x-large: $padding-medium;
+$card-padding-x-medium: 24px;
 $card-padding-y-large: $padding-medium * 1.25;
+$card-padding-y-medium: 35px;
 $card-border-radius: $border-radius;
 
 .card {
@@ -13,4 +15,8 @@ $card-border-radius: $border-radius;
     min-width: 260px;
     background-color: map.get($bg-colors, "card");
     border-radius: $card-border-radius;
+
+    @media (max-width: map.get($breakpoints, "medium")) {
+        padding: $card-padding-y-medium $card-padding-x-medium;
+    }
 }
