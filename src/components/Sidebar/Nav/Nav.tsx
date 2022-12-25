@@ -1,9 +1,9 @@
 import React from 'react';
 import s from "./Nav.module.scss";
-import HomeIcon from "../../../common/components/SVGIcons/HomeIcon";
-import SkillsIcon from "../../../common/components/SVGIcons/SkillsIcon";
-import ProjectsIcon from "../../../common/components/SVGIcons/ProjectsIcon";
-import ContactsIcon from "../../../common/components/SVGIcons/ContactsIcon";
+import {ReactComponent as HomeIcon} from "../../../resourses/images/home.svg";
+import {ReactComponent as SkillsIcon} from "../../../resourses/images/skills.svg";
+import {ReactComponent as ProjectsIcon} from "../../../resourses/images/projects.svg";
+import {ReactComponent as ContactsIcon} from "../../../resourses/images/contacts.svg";
 
 const listItems = {
     home: <HomeIcon/>,

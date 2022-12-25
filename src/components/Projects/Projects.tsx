@@ -2,7 +2,7 @@ import React from 'react';
 import commonS from "../../common/styles/Common.module.css";
 import s from "./Projects.module.css";
 import Project from "./Project/Project";
-import img from "../../resourses/img/d57nqqo.jpg"
+import img from "../../resourses/images/d57nqqo.jpg"
 
 const Projects = () => {
     const description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem dolorem doloremque, ducimus eius eligendi esse ex explicabo inventore ipsa iusto maiores minima optio quaerat ratione reiciendis rerum ullam, velit?"

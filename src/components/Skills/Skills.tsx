@@ -1,13 +1,13 @@
 import React from 'react';
 import SkillCard from "../../common/components/SkillCard/SkillCard";
 import ContentBox from "../../common/components/ContentBox/ContentBox";
-import {ReactComponent as TypescriptIcon} from "../../resourses/svg/typescript.svg";
-import {ReactComponent as ReactIcon} from "../../resourses/svg/react.svg";
-import {ReactComponent as MaterialUIIcon} from "../../resourses/svg/material-ui.svg";
-import {ReactComponent as SassIcon} from "../../resourses/svg/sass.svg";
-import {ReactComponent as ReduxIcon} from "../../resourses/svg/redux.svg";
-import {ReactComponent as FormikIcon} from "../../resourses/svg/formik.svg";
-import {ReactComponent as AxiosIcon} from "../../resourses/svg/axios.svg";
+import {ReactComponent as TypescriptIcon} from "../../resourses/images/typescript.svg";
+import {ReactComponent as ReactIcon} from "../../resourses/images/react.svg";
+import {ReactComponent as MaterialUIIcon} from "../../resourses/images/material-ui.svg";
+import {ReactComponent as SassIcon} from "../../resourses/images/sass.svg";
+import {ReactComponent as ReduxIcon} from "../../resourses/images/redux.svg";
+import {ReactComponent as FormikIcon} from "../../resourses/images/formik.svg";
+import {ReactComponent as AxiosIcon} from "../../resourses/images/axios.svg";
 import s from "./Skills.module.scss";
 
 const cards = [

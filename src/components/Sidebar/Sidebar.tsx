@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./Sidebar.module.scss"
-import UserPhoto from "../../resourses/img/kvDGZBoq-n0.jpg"
+import UserPhoto from "../../resourses/images/kvDGZBoq-n0.jpg"
 import Nav from "./Nav/Nav";
 
 const Sidebar = () => {
